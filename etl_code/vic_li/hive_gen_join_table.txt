@@ -25,3 +25,36 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY "\n"
 SELECT r.tconst, b.titleType, b.primaryTitle, b.originalTitle, b.genres, r.averageRating, r.numVotes 
 FROM TITLE_RATINGS r FULL OUTER JOIN TITLE_BASICS b ON (b.tconst = r.tconst);
+
+
+// create table for netflix's data
+create table netflix_data (show_id string, type string, title string, director string, title_cast string, country string, date_added string, release_year string, rating string, duration string, listed_in string, description string) row format delimited fields terminated by ',' stored as textfile;
+load data inpath 'hdfs://horton.hpc.nyu.edu:8020/user/sl5450/course_project/netflix_titles.csv' overwrite into table netflix_data;
+
+// check that data is loaded correctly
+describe netflix_data;
+select * from netflix_data limit 5;
+show tblproperties netflix_data;
+select count(*) from netflix_data;
+
+
+// create table for joined imdb data
+create table imdb_joined (tconst string, titleType string, primaryTitle string, originalTitle string, genres string, averageRating string, numVotes string) row format delimited fields terminated by ',' stored as textfile;
+load data inpath 'hdfs://horton.hpc.nyu.edu:8020/user/sl5450/course_project/imdb_joined_table.csv' overwrite into table imdb_joined;
+
+// check that data is loaded correctly
+describe imdb_joined;
+select * from imdb_joined limit 5;
+show tblproperties imdb_joined;
+select count(*) from imdb_joined;
+
+
+// join the `imdb_joined` table (joined from multiple IMDB tables) and `netflix_data`
+INSERT OVERWRITE DIRECTORY "/user/sl5450/netflix_imdb_join_table/"
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY "\n"
+SELECT  b.primaryTitle, b.averageRating, b.numVotes, b.genres
+FROM IMDB_JOINED b JOIN NETFLIX_DATA n ON (b.primaryTitle = n.title) where n.title is not null;
+
+
