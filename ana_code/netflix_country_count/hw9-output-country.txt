@@ -1,0 +1,104 @@
+Guatemala	2
+country	1
+Australia	76
+Ecuador	1
+Portugal	4
+Saudi Arabia	7
+Vatican City	1
+Bahamas	1
+Afghanistan	1
+Denmark	26
+United States	2181
+Brazil	53
+Norway	18
+Morocco	5
+Lebanon	18
+Colombia	16
+India	891
+Sri Lanka	1
+Romania	11
+Argentina	58
+Peru	8
+Somalia	1
+Germany	143
+Italy	57
+Iran	4
+Liechtenstein	1
+Iraq	1
+Belgium	71
+Malaysia	19
+Czech Republic	13
+Philippines	76
+Malta	2
+Jordan	6
+Slovakia	1
+Dominican Republic	1
+Senegal	1
+Mexico	91
+Kenya	5
+Singapore	18
+Netherlands	31
+Croatia	3
+South Korea	61
+Egypt	95
+South Africa	41
+Switzerland	16
+New Zealand	17
+Angola	1
+Qatar	7
+Serbia	7
+West Germany	2
+Spain	147
+Zimbabwe	1
+Sweden	23
+Lithuania	1
+Russia	9
+Ghana	4
+Latvia	1
+Nigeria	70
+Montenegro	1
+Nepal	2
+Panama	1
+Pakistan	20
+Indonesia	75
+Bulgaria	9
+Georgia	1
+Bermuda	1
+Kuwait	4
+Chile	21
+Sudan	1
+Vietnam	5
+Algeria	2
+France	254
+Uruguay	10
+United Kingdom	426
+Namibia	1
+Luxembourg	10
+China	98
+Bangladesh	3
+Venezuela	1
+Canada	263
+Soviet Union	3
+Finland	4
+Poland	28
+Ireland	27
+Albania	1
+Nicaragua	1
+East Germany	1
+Cambodia	5
+Hong Kong	95
+Thailand	43
+Israel	16
+Turkey	83
+Hungary	8
+Greece	6
+Slovenia	3
+Iceland	7
+Paraguay	1
+Japan	108
+Malawi	1
+Jamaica	1
+Taiwan	21
+United Arab Emirates	31
+Austria	8
+Cayman Islands	2

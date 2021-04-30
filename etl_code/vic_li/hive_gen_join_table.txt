@@ -1,0 +1,27 @@
+// create and load ratings table
+create table title_ratings (tconst string, averageRating string, numVotes string) row format delimited fields terminated by '\t' stored as textfile;
+load data inpath 'hdfs://horton.hpc.nyu.edu:8020/user/sl5450/course_project/title.ratings.tsv' overwrite into table title_ratings;
+
+// check that data is loaded correctly
+describe title_ratings;
+select * from title_ratings limit 5;
+show tblproperties title_ratings;
+select count(*) from title_ratings;
+
+// create and load basics table
+create table title_basics (tconst string, titleType string, primaryTitle string, originalTitle string, isAdult string, startYear string, endYear string, runtimeMinutes string, genres string) row format delimited fields terminated by '\t' stored as textfile;
+load data inpath 'hdfs://horton.hpc.nyu.edu:8020/user/sl5450/course_project/title.basics.tsv' overwrite into table title_basics;
+
+// check that data is loaded correctly
+describe title_basics;
+select * from title_basics limit 5;
+show tblproperties title_basics;
+select count(*) from title_basics;
+
+// join table and write joined table to file
+INSERT OVERWRITE DIRECTORY "/user/sl5450/imdb_join_table/"
+ROW FORMAT DELIMITED 
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY "\n"
+SELECT r.tconst, b.titleType, b.primaryTitle, b.originalTitle, b.genres, r.averageRating, r.numVotes 
+FROM TITLE_RATINGS r FULL OUTER JOIN TITLE_BASICS b ON (b.tconst = r.tconst);
