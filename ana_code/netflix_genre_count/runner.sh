@@ -1,6 +1,6 @@
 NETID=zw1511
 
-HDFS_INPUT_PATH=hw/hw9/netflix_titles.csv
+HDFS_INPUT_PATH=hw/hw7/netflix_titles.csv
 HDFS_OUTPUT_PATH=/user/$NETID/hw/hw9/genre/output
 
 OUTPUT_FNAME=output.txt
