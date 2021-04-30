@@ -3,7 +3,7 @@ NETID=sl5450
 HDFS_INPUT_PATH=hw7/title.ratings.tsv
 HDFS_OUTPUT_PATH=/user/$NETID/hw9/output/ratings-stdev
 
-OUTPUT_FNAME=rating-stdev.txt
+OUTPUT_FNAME=output.txt
 
 javac -classpath `yarn classpath` -d . RatingStdevMapper.java &&
 javac -classpath `yarn classpath` -d . RatingStdevReducer.java && 

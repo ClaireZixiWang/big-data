@@ -3,7 +3,7 @@ NETID=zw1511
 HDFS_INPUT_PATH=hw/hw9/netflix_titles.csv
 HDFS_OUTPUT_PATH=/user/$NETID/hw/hw9/output
 
-OUTPUT_FNAME=hw9-output.txt
+OUTPUT_FNAME=output.txt
 
 javac -classpath `yarn classpath` -d . TypeCountMapper.java &&
 javac -classpath `yarn classpath` -d . TypeCountReducer.java && 

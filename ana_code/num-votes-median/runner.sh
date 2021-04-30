@@ -3,7 +3,7 @@ NETID=sl5450
 HDFS_INPUT_PATH=hw7/title.ratings.tsv
 HDFS_OUTPUT_PATH=/user/$NETID/hw9/output/num-votes-median
 
-OUTPUT_FNAME=num-votes-median.txt
+OUTPUT_FNAME=output.txt
 
 javac -classpath `yarn classpath` -d . NumVotesMedianMapper.java &&
 javac -classpath `yarn classpath` -d . NumVotesMedianReducer.java && 
