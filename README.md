@@ -5,13 +5,13 @@
 The files are stored at:
 
 - In Vic Li's drive (sl5450):
-  - hw10/netflix_imdb_joined.csv
-  - hw7/title.akas.tsv
-  - hw7/title.ratings.tsv
-  - hw7/titles-akas-cleaned.txt
-  - course_project/**      // for data table joining
+  - `hw10/netflix_imdb_joined.csv`
+  - `hw7/title.akas.tsv`
+  - `hw7/title.ratings.tsv`
+  - `hw7/titles-akas-cleaned.txt`
+  - `course_project/**`      // for data table joining
 - In Claire Wang's drive (zw1511):
-  - hw/hw9/netflix_titles.csv
+  - `hw/hw9/netflix_titles.csv`
 
 We shared files collaboratively. The file under Claire's drive has many more columns than the ones in Vic's drive.
 
