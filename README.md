@@ -11,7 +11,7 @@ The files are stored at:
   - `hw7/titles-akas-cleaned.txt`
   - `course_project/**`      // for data table joining
 - In Claire Wang's drive (zw1511):
-  - `hw/hw9/netflix_titles.csv`
+  - `hw/hw7/netflix_titles.csv`
 
 We shared files collaboratively. The file under Claire's drive has many more columns than the ones in Vic's drive.
 
